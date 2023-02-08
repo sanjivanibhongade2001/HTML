@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive image using picture element</title>
+</head>
+<body>
+    <picture>
+        <source media="(min-width: 600px)" srcset="img2.jpg">
+        <source media="(min-width: 450px)" srcset="img1.png">
+        <img src="img.png" style="width:auto;">
+       </picture>
+       <!--On screens with screen width >600px, it shows large_image.jpg
+        On screens with screen width >450px, it shows small_image.jpg
+        On screens with other screen width, it shows default_image.jpg -->
+</body>
+</html>

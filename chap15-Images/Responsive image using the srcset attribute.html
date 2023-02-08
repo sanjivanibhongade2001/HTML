@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive image using the srcset attribute</title>
+</head>
+<body>
+    <img sizes="(min-width: 1200px) 580px,
+ (min-width: 640px) 48vw,
+ 98vw"
+ srcset="img/hello-300.jpg 300w,
+ img2.jpg 600w,
+ img2.jpg 900w,
+ img2.jpg 1200w"
+ src="img2.jpg" alt="anime">
+ 
+ <img src="img2.jpg" alt="hello"
+ srcset="img2.jpg 1x,
+ img2.jpg 2x,
+ img2.jpg 3x">
+</body>
+</html>
