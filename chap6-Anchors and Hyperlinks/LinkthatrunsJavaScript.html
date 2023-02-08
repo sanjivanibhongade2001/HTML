@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link that runs JavaScript</title>
+</head>
+    <script type = "text/javascript">  
+    function myfunction() {   
+    alert("how are you");  
+            }  
+    </script>
+<body> 
+    <!-- Create a function and pass that function in href  -->
+    <a href="javascript:alert('Hello!');">Click Here</a><br><br>
+    <a href="javascript:myfunction();" >Run Code</a><br><br>
+    <!-- The return false; is necessary to prevent your page from scrolling -->
+
+
+    <!-- Onclick is used to call the function here -->
+    <a href="#" onclick="myfunction(); return false;">Run Code</a><br><br>
+
+    <!-- an exclamation mark ! after the hashtag in order to prevent the page from scrolling to the top -->
+    <a href="#!" onclick="myfunction();">Run Code</a><br>
+
+    <!--  consider whether this element is really a button instead of a link. If so, you should use <button> -->
+</body>
+</html>
