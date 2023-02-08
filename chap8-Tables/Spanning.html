@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanning column and rows</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <!-- rowspan = A non-negative integer that specifies the number of rows spanned by a cell
+            The default value of this attribute is one (1). A value of zero (0) means that the cell 
+            will extend from the current row until the last row of the table -->
+            <td rowspan="3">Sanjivani</td>
+
+
+            <td colspan="2">Email address of user is expedita vel nemo minima. </td>
+        </tr>
+        <tr>
+            <td>sanjivani@gmail.com</td>
+            <td>738287798</td>
+            <td>Wardha, 442001</td>
+        </tr>
+        <tr>
+            <td>sanjivani@gmail.com</td>
+            <td>738287798</td>
+            <td>Wardha, 442001</td>
+        </tr>
+    </table>
+</body>
+</html>
